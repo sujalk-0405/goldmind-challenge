@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldMind Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              royal: '#4C1D95',
+              deep: '#22014B',
+              midnight: '#050112',
+              gold: {
+                DEFAULT: '#F5C542',
+                light: '#F7D76A',
+                dark: '#D97706',
+              },
+              correct: '#22C55E',
+              wrong: '#EF4444',
+            },
+            fontFamily: {
+              heading: ['Poppins', 'Montserrat', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+              serif: ['serif'],
+            },
+            backgroundImage: {
+              'game-gradient': 'radial-gradient(circle at center, #22014B 0%, #050112 100%)',
+              'gold-gradient': 'linear-gradient(135deg, #F5C542 0%, #F7D76A 100%)',
+            },
+            animation: {
+              'pulse-gold': 'pulse-gold 2s infinite',
+              'ripple': 'ripple 3s linear infinite',
+              'ripple-slow': 'ripple 6s linear infinite',
+              'ripple-delay-1': 'ripple 3s linear infinite 1s',
+              'ripple-delay-2': 'ripple 3s linear infinite 2s',
+              'confetti': 'confetti-fall 3s linear forwards',
+            },
+            keyframes: {
+              'pulse-gold': {
+                '0%, 100%': { boxShadow: '0 0 10px #F5C542' },
+                '50%': { boxShadow: '0 0 20px #F7D76A' },
+              },
+              'ripple': {
+                '0%': { transform: 'scale(0.8)', opacity: '0.8' },
+                '100%': { transform: 'scale(3)', opacity: '0' },
+              },
+              'confetti-fall': {
+                '0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '1' },
+                '100%': { transform: 'translateY(100vh) rotate(720deg)', opacity: '0' }
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #050112;
+        color: white;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050112; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4C1D95; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #F5C542; 
+      }
+      
+      @media print {
+        @page {
+          size: landscape;
+          margin: 0;
+        }
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          background: white;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

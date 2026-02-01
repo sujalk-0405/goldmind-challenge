@@ -1,0 +1,5 @@
+{
+  "name": "GoldMind Challenge",
+  "description": "An interactive, game-show styled quiz platform where knowledge turns into gold. Features progressive difficulty, lifelines powered by Gemini AI, and dynamic certificates.",
+  "requestFramePermissions": []
+}
