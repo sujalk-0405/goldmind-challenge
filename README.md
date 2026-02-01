@@ -6,6 +6,23 @@ The application delivers a premium, game-show-style experience with progressive 
 
 This project represents an end-to-end **product concept, system design, and AI-assisted prototype**.
 
+## Screenshots
+
+### Home
+![Home Page](screenshots/homepage.png)
+
+### Start Challenge
+![Start Challenge](screenshots/start-challenge.png)
+
+### Fastest Finger First
+![Fastest Finger](screenshots/ff.png)
+
+### Quiz Round
+![Quiz Round](screenshots/quiz-rounds.png)
+
+### Certificate
+![Certificate](screenshots/reward.png)
+
 ---
 
 ## Project Goals
